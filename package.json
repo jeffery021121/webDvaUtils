@@ -1,0 +1,25 @@
+{
+  "name": "webdvautils",
+  "version": "0.0.1",
+  "description": "utils for webDva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffery021121/webDvaUtils.git"
+  },
+  "keywords": [
+    "webDva"
+  ],
+  "author": "jeffery0211",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffery021121/webDvaUtils/issues"
+  },
+  "homepage": "https://github.com/jeffery021121/webDvaUtils#readme",
+  "dependencies": {
+    "react": "^16.9.0"
+  }
+}
