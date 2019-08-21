@@ -1,5 +1,5 @@
 // @ts-ignore
-import cwebDvaUtils from 'webdvautils/lib/webDvaUtils'
+import asyncComponent from "./dynamic";
 // declare namespace webDvaUtils {
 //   type asyncComponent = () => () => void;
 // }
@@ -9,13 +9,16 @@ import cwebDvaUtils from 'webdvautils/lib/webDvaUtils'
 // })
 
 interface ImondelConfig {
-  app: any
-  modelsFunc: () => Array<any>
+  app: any;
+  modelsFunc: () => Array<any>;
 }
 interface IwebDvaUtils {
   asyncComponent: (
     Cmp: JSX.Element | Function,
-  ) => (importFunc: () => any, mondelConfig: ImondelConfig) => React.ComponentClass<any, any> | React.FunctionComponent<any>
+  ) => (
+    importFunc: () => any,
+    mondelConfig: ImondelConfig,
+  ) => React.ComponentClass<any, any> | React.FunctionComponent<any>;
 }
-const webDvaUtils: IwebDvaUtils = cwebDvaUtils
-export default webDvaUtils
+const webDvaUtils: IwebDvaUtils = { asyncComponent };
+export default webDvaUtils;
